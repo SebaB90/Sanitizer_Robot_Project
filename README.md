@@ -31,9 +31,9 @@ After the mapping of the scenario (Task 2) the students are asked to makes the r
 Suppose that:
 - In order to kill the coronavirus, the robot is equipped with a set of UV lamps able to spread all around the robot a light power \(P_l = 100 µW/m^2\);
 - The UV energy \(E\) at point \((x, y)\) and time \(t\) can be computed as:
-  $$
+  $
   E(x, y, t) = \int_0^t \frac{P_l}{(x - p_x(\tau))^2 + (y - p_y(\tau))^2} d\tau
-  $$
+  $
   where \(p_x(t)\) and \(p_y(t)\) represent the robot position along the x and the y axis respectively at time \(t\);
 - Any obstacle completely stops the UV power propagation;
 - The light power emitted at a distance lower than 0.1 meters from the robot is zero due to the robot encumbrance;
