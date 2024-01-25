@@ -30,14 +30,19 @@ After the mapping of the scenario (Task 2) the students are asked to makes the r
 ### Task 4
 Suppose that:
 - In order to kill the coronavirus, the robot is equipped with a set of UV lamps able to spread all around the robot a light power \(P_l = 100 µW/m^2\);
-- The UV energy \(E\) at point \((x, y)\) and time \(t\) can be computed as \(E(x, y, t) = \int_0^t \frac{P_l}{(x - p_x(\tau))^2 + (y - p_y(\tau))^2} d\tau\), where \(p_x(t)\) and \(p_y(t)\) represent the robot position along the x and the y axis respectively at time \(t\);
+- The UV energy \(E\) at point \((x, y)\) and time \(t\) can be computed as:
+  $$
+  E(x, y, t) = \int_0^t \frac{P_l}{(x - p_x(\tau))^2 + (y - p_y(\tau))^2} d\tau
+  $$
+  where \(p_x(t)\) and \(p_y(t)\) represent the robot position along the x and the y axis respectively at time \(t\);
 - Any obstacle completely stops the UV power propagation;
 - The light power emitted at a distance lower than 0.1 meters from the robot is zero due to the robot encumbrance;
 - The room of interest can be discretized as a grid with resolution 0.2 m. 
 
-By sampling the process with sample time \(\Delta t\), the UV energy \(E\) at point \((x, y)\) and sample time \(k\) can be rewritten as \(E(x, y, k) = \sum_{i=0}^{k} \frac{P_l \Delta t}{(x - p_x(i \Delta t))^2 + (y - p_y(i \Delta t))^2}\).
-
-The students are asked to implement a strategy to define a path able to cover a selected room in the map in order to guarantee a minimum value of 10 mJ of the UV energy over the room to ensure the coronavirus is inactivated.
+By sampling the process with sample time \(\Delta t\), the UV energy \(E\) at point \((x, y)\) and sample time \(k\) can be rewritten as:
+  $$
+  E(x, y, k) = \sum_{i=0}^{k} \frac{P_l \Delta t}{(x - p_x(i \Delta t))^2 + (y - p_y(i \Delta t))^2}
+  $$
 
 ### General Rules
 The students are asked to address the following tasks using ROS the TurtleBot3 robot moving in an unknown environment:
@@ -59,6 +64,3 @@ The students are asked to address the following tasks using ROS the TurtleBot3 r
 
 ---
 
-**Thanks!**
-
-**Questions?**
