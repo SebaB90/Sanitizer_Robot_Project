@@ -1,0 +1,1 @@
+/home/sebab/ARS_final_project/build/turtlebot3_gazebo/ament_cmake_environment_hooks/local_setup.bash
