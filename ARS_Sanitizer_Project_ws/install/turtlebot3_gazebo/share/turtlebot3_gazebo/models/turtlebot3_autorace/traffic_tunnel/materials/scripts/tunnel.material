@@ -1,1 +1,14 @@
-/home/sebab/ARS_final_project/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace/traffic_tunnel/materials/scripts/tunnel.material
+material traffic_tunnel
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture tunnel.png
+      }
+    }
+  }
+}
+
