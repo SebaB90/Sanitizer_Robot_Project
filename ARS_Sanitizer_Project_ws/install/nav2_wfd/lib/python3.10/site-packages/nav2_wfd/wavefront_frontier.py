@@ -38,8 +38,9 @@ import numpy as np
 
 import math
 
-OCC_THRESHOLD = 10
+OCC_THRESHOLD = 30
 MIN_FRONTIER_SIZE = 5
+RADIUS = 0.7
 
 class Costmap2d():
     class CostValues(Enum):
@@ -216,6 +217,15 @@ def getFrontier(pose, costmap, logger):
 
         p.classification = p.classification | PointClassification.MapClosed.value
 
+    # Generazione frontiera fittizia per sbloccare il robot 
+    angle = np.random.uniform(0, 2*np.pi)
+    new_frontier_x = pose.position.x + np.cos(angle)*RADIUS
+    new_frontier_y = pose.position.y + np.sin(angle)*RADIUS
+    
+
+    new_frontier_cords = costmap.mapToWorld(new_frontier_x, new_frontier_y)
+    frontiers.append(new_frontier_cords)
+
     return frontiers
         
 
@@ -266,6 +276,7 @@ class WaypointFollowerTest(Node):
           history=QoSHistoryPolicy.KEEP_LAST,
           depth=1)
 
+        # ATTENZIONEEEEEE! al posto di follow_waypoints era stato inserito FollowWaypoints!!!!
         self.action_client = ActionClient(self, FollowWaypoints, 'follow_waypoints')
         #self.action_client = ActionClient(self, NavigateThroughPoses, 'NavigateThroughPoses')
         self.initial_pose_pub = self.create_publisher(PoseWithCovarianceStamped,
@@ -310,6 +321,8 @@ class WaypointFollowerTest(Node):
         self.setWaypoints(location)
 
         #action_request = NavigateThroughPoses.Goal()
+        # print the setted waypoint
+        self.info_msg(f'\n\n****self.waypoints*******\n\n = {self.waypoints}')
         action_request = FollowWaypoints.Goal()
         action_request.poses = self.waypoints
         self.info_msg(f'poses = {action_request.poses}')
@@ -317,6 +330,7 @@ class WaypointFollowerTest(Node):
         self.info_msg('Sending goal request...')
         send_goal_future = self.action_client.send_goal_async(action_request)
         self.info_msg('Print before spin_until_future_complete')
+
         try:
             rclpy.spin_until_future_complete(self, send_goal_future)
             self.info_msg('Spin on send_goal_future complete')
@@ -341,7 +355,7 @@ class WaypointFollowerTest(Node):
             self.error_msg('Service call failed %r' % (e,))
 
         #self.currentPose = self.waypoints[len(self.waypoints) - 1].pose
-
+        self.info_msg("Waypoint reached")
         self.moveToFrontiers()
 
     def costmapCallback(self, msg):

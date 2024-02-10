@@ -1,0 +1,3 @@
+[console_scripts]
+uv_power = uv_power.uv_power_node:main
+
