@@ -1,0 +1,5 @@
+[0.231s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo -- -j16 -l16
+[0.864s] [ 25%] Built target turtlebot3_drive
+[0.864s] [ 62%] Built target obstacle2
+[0.864s] [ 75%] Built target obstacle1
+[0.864s] [100%] Built target obstacles

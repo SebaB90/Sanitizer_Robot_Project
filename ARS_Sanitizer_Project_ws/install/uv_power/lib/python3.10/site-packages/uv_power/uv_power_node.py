@@ -6,8 +6,10 @@ from nav_msgs.msg import Odometry, OccupancyGrid
 from rclpy.qos import QoSProfile, QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolicy, QoSLivelinessPolicy
 import time
 
-# Power in [µW*m2]
-PI = 100
+# Power in [mW*m2]
+PI = 0.1
+
+
 # Max range for UV irradiation [m]
 MAX_INFLUENCE_RADIUS = 5
 
@@ -41,7 +43,7 @@ class PowerMatrix (Node):
         self.map_frame_id = None
         self.map_orientation = None
         self.map_data = None  # Initialize map_data to None
-        self.power_resolution = 0.15
+        self.power_resolution = 0.2
         self.power_width = 0
         self.power_height = 0
 
@@ -150,8 +152,7 @@ class PowerMatrix (Node):
 
             if self.is_inside_polygon(mx, my) and dist > 0.1:
                 # Power in [µW] - 126
-                 self.power_matrix[id] = min(max(int(2*PI / (dist ** 2)-50), -126), 126)
-
+                self.power_matrix[id] = int(PI / (dist ** 2) * 9.8) # valore della potenza riscalato per la rappresentazione con 8 bit
 
     def distance_from_robot(self, x, y):
         return math.sqrt((x - self.x_robot) ** 2 + (y - self.y_robot) ** 2)

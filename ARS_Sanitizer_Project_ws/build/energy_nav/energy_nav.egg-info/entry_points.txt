@@ -1,0 +1,4 @@
+[console_scripts]
+energy_nav_node = energy_nav.energy_navigation:main
+example_nav_node = energy_nav.example_navigation:main
+

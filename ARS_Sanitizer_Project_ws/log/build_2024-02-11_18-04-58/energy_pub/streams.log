@@ -1,0 +1,24 @@
+[2.609s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/energy_pub': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/energy_pub build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/install.log --single-version-externally-managed
+[3.013s] running egg_info
+[3.014s] writing ../../build/energy_pub/energy_pub.egg-info/PKG-INFO
+[3.014s] writing dependency_links to ../../build/energy_pub/energy_pub.egg-info/dependency_links.txt
+[3.014s] writing entry points to ../../build/energy_pub/energy_pub.egg-info/entry_points.txt
+[3.014s] writing requirements to ../../build/energy_pub/energy_pub.egg-info/requires.txt
+[3.015s] writing top-level names to ../../build/energy_pub/energy_pub.egg-info/top_level.txt
+[3.017s] reading manifest file '../../build/energy_pub/energy_pub.egg-info/SOURCES.txt'
+[3.019s] writing manifest file '../../build/energy_pub/energy_pub.egg-info/SOURCES.txt'
+[3.019s] running build
+[3.019s] running build_py
+[3.019s] copying energy_pub/energy_pub.py -> /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/build/lib/energy_pub
+[3.019s] running install
+[3.020s] running install_lib
+[3.021s] copying /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/build/lib/energy_pub/energy_pub.py -> /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages/energy_pub
+[3.022s] byte-compiling /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages/energy_pub/energy_pub.py to energy_pub.cpython-310.pyc
+[3.024s] running install_data
+[3.025s] running install_egg_info
+[3.028s] removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages/energy_pub-0.0.0-py3.10.egg-info' (and everything under it)
+[3.028s] Copying ../../build/energy_pub/energy_pub.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages/energy_pub-0.0.0-py3.10.egg-info
+[3.029s] running install_scripts
+[3.060s] Installing energy_pub_node script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/energy_pub
+[3.061s] writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/install.log'
+[3.259s] Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/energy_pub' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_pub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/energy_pub build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_pub/install.log --single-version-externally-managed
