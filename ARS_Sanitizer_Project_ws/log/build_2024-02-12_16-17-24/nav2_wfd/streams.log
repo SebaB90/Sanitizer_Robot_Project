@@ -1,0 +1,22 @@
+[2.317s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_wfd build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log --single-version-externally-managed
+[2.677s] running egg_info
+[2.678s] writing ../../build/nav2_wfd/nav2_wfd.egg-info/PKG-INFO
+[2.678s] writing dependency_links to ../../build/nav2_wfd/nav2_wfd.egg-info/dependency_links.txt
+[2.678s] writing entry points to ../../build/nav2_wfd/nav2_wfd.egg-info/entry_points.txt
+[2.678s] writing requirements to ../../build/nav2_wfd/nav2_wfd.egg-info/requires.txt
+[2.678s] writing top-level names to ../../build/nav2_wfd/nav2_wfd.egg-info/top_level.txt
+[2.681s] reading manifest file '../../build/nav2_wfd/nav2_wfd.egg-info/SOURCES.txt'
+[2.681s] adding license file 'LICENSE'
+[2.682s] writing manifest file '../../build/nav2_wfd/nav2_wfd.egg-info/SOURCES.txt'
+[2.682s] running build
+[2.682s] running build_py
+[2.683s] running install
+[2.684s] running install_lib
+[2.686s] running install_data
+[2.687s] running install_egg_info
+[2.689s] removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages/nav2_wfd-0.0.0-py3.10.egg-info' (and everything under it)
+[2.689s] Copying ../../build/nav2_wfd/nav2_wfd.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages/nav2_wfd-0.0.0-py3.10.egg-info
+[2.690s] running install_scripts
+[2.718s] Installing explore script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/nav2_wfd
+[2.719s] writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log'
+[2.887s] Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_wfd build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log --single-version-externally-managed

@@ -1,0 +1,330 @@
+[0.747s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.747s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd9981222f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd9982eff10>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd9982eff10>>)
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.779s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.779s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.779s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.786s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extensions ['ignore', 'ignore_ament_install']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extension 'ignore'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extension 'ignore_ament_install'
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extensions ['colcon_pkg']
+[0.787s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extension 'colcon_pkg'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extensions ['colcon_meta']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extension 'colcon_meta'
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extensions ['ros']
+[0.788s] Level 1:colcon.colcon_core.package_identification:_identify(src/nav2_wavefront_frontier_exploration) by extension 'ros'
+[0.789s] DEBUG:colcon.colcon_core.package_identification:Package 'src/nav2_wavefront_frontier_exploration' with type 'ros.ament_python' and name 'nav2_wfd'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore_ament_install'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_pkg']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_pkg'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_meta']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_meta'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ros']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ros'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['cmake', 'python']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'cmake'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'python'
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['python_setup_py']
+[0.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'python_setup_py'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['ignore', 'ignore_ament_install']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ignore'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ignore_ament_install'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['colcon_pkg']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'colcon_pkg'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['colcon_meta']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'colcon_meta'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extensions ['ros']
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_fake_node) by extension 'ros'
+[0.790s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_fake_node' with type 'ros.ament_cmake' and name 'turtlebot3_fake_node'
+[0.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ignore_ament_install'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['colcon_pkg']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'colcon_pkg'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['colcon_meta']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'colcon_meta'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extensions ['ros']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_gazebo) by extension 'ros'
+[0.791s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_gazebo' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ignore'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ignore_ament_install'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['colcon_pkg']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'colcon_pkg'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['colcon_meta']
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'colcon_meta'
+[0.791s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extensions ['ros']
+[0.792s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations/turtlebot3_simulations) by extension 'ros'
+[0.792s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations/turtlebot3_simulations' with type 'ros.ament_cmake' and name 'turtlebot3_simulations'
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.792s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.863s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.863s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.886s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 355 installed packages in /opt/ros/humble
+[0.887s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_args' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_target' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_clean_cache' from command line to 'False'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_clean_first' from command line to 'False'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'cmake_force_configure' from command line to 'False'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'ament_cmake_args' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'catkin_cmake_args' from command line to 'None'
+[0.954s] Level 5:colcon.colcon_core.verb:set package 'nav2_wfd' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.954s] DEBUG:colcon.colcon_core.verb:Building package 'nav2_wfd' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd', 'merge_install': False, 'path': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration', 'symlink_install': False, 'test_result_base': None}
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.965s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_fake_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.965s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_fake_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node', 'merge_install': False, 'path': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_fake_node', 'symlink_install': False, 'test_result_base': None}
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.976s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.976s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo', 'merge_install': False, 'path': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_cache' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_first' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_force_configure' from command line to 'False'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'ament_cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_cmake_args' from command line to 'None'
+[0.987s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.987s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_simulations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations', 'merge_install': False, 'path': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_simulations', 'symlink_install': False, 'test_result_base': None}
+[0.997s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.009s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.009s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_fake_node' with build type 'ament_cmake'
+[1.009s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_fake_node'
+[1.021s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.021s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.021s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.044s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_gazebo' with build type 'ament_cmake'
+[1.044s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_gazebo'
+[1.055s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.056s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.079s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration' with build type 'ament_python'
+[1.079s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_wfd', 'ament_prefix_path')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/ament_prefix_path.ps1'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/ament_prefix_path.dsv'
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/ament_prefix_path.sh'
+[1.103s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.103s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node -- -j16 -l16
+[1.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo -- -j16 -l16
+[1.318s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration'
+[1.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node -- -j16 -l16
+[1.355s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo -- -j16 -l16
+[1.375s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node
+[1.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo
+[1.383s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[1.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_fake_node
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node' for CMake module files
+[1.403s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node' for CMake config files
+[1.404s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[1.415s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[1.416s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/bin'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib/python3.10/site-packages'
+[1.416s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/bin'
+[1.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[1.428s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[1.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[1.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[1.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[1.430s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[1.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[1.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_gazebo
+[1.443s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo' for CMake module files
+[1.444s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo' for CMake config files
+[1.444s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/bin'
+[1.457s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[1.458s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/bin'
+[1.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[1.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[1.471s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[1.483s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_fake_node)
+[1.495s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node' for CMake module files
+[1.496s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node' for CMake config files
+[1.496s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_fake_node', 'cmake_prefix_path')
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.ps1'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.dsv'
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/hook/cmake_prefix_path.sh'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/bin'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib/pkgconfig/turtlebot3_fake_node.pc'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/lib/python3.10/site-packages'
+[1.508s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/bin'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.ps1'
+[1.520s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.dsv'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.sh'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.bash'
+[1.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/turtlebot3_fake_node/package.zsh'
+[1.521s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node/share/colcon-core/packages/turtlebot3_fake_node)
+[1.533s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo' for CMake module files
+[1.545s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo' for CMake config files
+[1.546s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[1.558s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[1.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib'
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/bin'
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[1.559s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/bin'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[1.571s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[1.572s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[1.572s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[1.572s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_simulations' with build type 'ament_cmake'
+[1.573s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/turtlebot3_simulations/turtlebot3_simulations'
+[1.585s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.585s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.613s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_wfd build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log --single-version-externally-managed
+[1.615s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations': AMENT_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations -- -j16 -l16
+[1.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations' returned '0': AMENT_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --build /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations -- -j16 -l16
+[1.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations': AMENT_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations
+[1.658s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[1.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations' returned '0': AMENT_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_fake_node:/opt/ros/humble /usr/bin/cmake --install /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/turtlebot3_simulations
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations' for CMake module files
+[1.671s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations' for CMake config files
+[1.671s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[1.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/bin'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[1.683s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[1.684s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/bin'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[1.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[1.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[1.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[1.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[1.721s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations' for CMake module files
+[1.733s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations' for CMake config files
+[1.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[1.745s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[1.746s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[1.746s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/bin'
+[1.746s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[1.746s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[1.746s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/bin'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[1.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[1.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[1.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[1.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[1.831s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/nav2_wfd build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log --single-version-externally-managed
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd' for CMake module files
+[1.842s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd' for CMake config files
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib'
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/bin'
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/pkgconfig/nav2_wfd.pc'
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages'
+[1.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('nav2_wfd', 'pythonpath')
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/pythonpath.ps1'
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/pythonpath.dsv'
+[1.854s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/hook/pythonpath.sh'
+[1.854s] Level 1:colcon.colcon_core.environment:checking '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/bin'
+[1.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(nav2_wfd)
+[1.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/package.ps1'
+[1.865s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/package.dsv'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/package.sh'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/package.bash'
+[1.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/nav2_wfd/package.zsh'
+[1.866s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/share/colcon-core/packages/nav2_wfd)
+[1.866s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.867s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.867s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.867s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.881s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.881s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.881s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.889s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.900s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/local_setup.ps1'
+[1.901s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/_local_setup_util_ps1.py'
+[1.902s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/setup.ps1'
+[1.913s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/local_setup.sh'
+[1.913s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/_local_setup_util_sh.py'
+[1.913s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/setup.sh'
+[1.925s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/local_setup.bash'
+[1.925s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/setup.bash'
+[1.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/local_setup.zsh'
+[1.937s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/setup.zsh'

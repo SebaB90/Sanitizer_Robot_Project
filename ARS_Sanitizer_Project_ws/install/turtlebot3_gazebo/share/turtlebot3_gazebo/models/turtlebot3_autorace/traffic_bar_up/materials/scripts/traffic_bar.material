@@ -1,1 +1,14 @@
-/home/sebab/ARS_final_project/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace/traffic_bar_up/materials/scripts/traffic_bar.material
+material traffic_bar
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture traffic_bar.png
+      }
+    }
+  }
+}
+

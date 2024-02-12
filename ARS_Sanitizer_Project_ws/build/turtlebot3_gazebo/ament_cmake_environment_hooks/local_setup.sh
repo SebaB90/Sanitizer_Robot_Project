@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/sebab/ARS_final_project/install/turtlebot3_gazebo"}
+: ${AMENT_CURRENT_PREFIX:="/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/turtlebot3_gazebo"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

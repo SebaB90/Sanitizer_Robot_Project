@@ -1,0 +1,22 @@
+[2.757s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/energy_nav': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/energy_nav build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/install.log --single-version-externally-managed
+[3.163s] running egg_info
+[3.164s] writing ../../build/energy_nav/energy_nav.egg-info/PKG-INFO
+[3.164s] writing dependency_links to ../../build/energy_nav/energy_nav.egg-info/dependency_links.txt
+[3.164s] writing entry points to ../../build/energy_nav/energy_nav.egg-info/entry_points.txt
+[3.165s] writing requirements to ../../build/energy_nav/energy_nav.egg-info/requires.txt
+[3.165s] writing top-level names to ../../build/energy_nav/energy_nav.egg-info/top_level.txt
+[3.168s] reading manifest file '../../build/energy_nav/energy_nav.egg-info/SOURCES.txt'
+[3.170s] writing manifest file '../../build/energy_nav/energy_nav.egg-info/SOURCES.txt'
+[3.170s] running build
+[3.170s] running build_py
+[3.170s] running install
+[3.171s] running install_lib
+[3.173s] running install_data
+[3.174s] running install_egg_info
+[3.176s] removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/python3.10/site-packages/energy_nav-0.0.0-py3.10.egg-info' (and everything under it)
+[3.177s] Copying ../../build/energy_nav/energy_nav.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/python3.10/site-packages/energy_nav-0.0.0-py3.10.egg-info
+[3.178s] running install_scripts
+[3.208s] Installing energy_nav_node script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/energy_nav
+[3.209s] Installing example_nav_node script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/energy_nav
+[3.209s] writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/install.log'
+[3.405s] Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/energy_nav' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/energy_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/energy_nav build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/energy_nav/install.log --single-version-externally-managed

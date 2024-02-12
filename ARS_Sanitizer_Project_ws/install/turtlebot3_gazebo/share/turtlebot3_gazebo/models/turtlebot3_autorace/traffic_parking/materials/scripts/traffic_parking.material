@@ -1,1 +1,14 @@
-/home/sebab/ARS_final_project/src/turtlebot3_simulations/turtlebot3_gazebo/models/turtlebot3_autorace/traffic_parking/materials/scripts/traffic_parking.material
+material traffic_parking
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture traffic_parking.png
+      }
+    }
+  }
+}
+

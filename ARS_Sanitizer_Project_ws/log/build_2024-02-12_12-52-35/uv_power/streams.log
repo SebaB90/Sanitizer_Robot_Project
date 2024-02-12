@@ -1,0 +1,21 @@
+[2.067s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/uv_power': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/uv_power/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/uv_power build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/install.log --single-version-externally-managed
+[2.364s] running egg_info
+[2.365s] writing ../../build/uv_power/uv_power.egg-info/PKG-INFO
+[2.366s] writing dependency_links to ../../build/uv_power/uv_power.egg-info/dependency_links.txt
+[2.366s] writing entry points to ../../build/uv_power/uv_power.egg-info/entry_points.txt
+[2.366s] writing requirements to ../../build/uv_power/uv_power.egg-info/requires.txt
+[2.366s] writing top-level names to ../../build/uv_power/uv_power.egg-info/top_level.txt
+[2.369s] reading manifest file '../../build/uv_power/uv_power.egg-info/SOURCES.txt'
+[2.369s] writing manifest file '../../build/uv_power/uv_power.egg-info/SOURCES.txt'
+[2.369s] running build
+[2.370s] running build_py
+[2.370s] running install
+[2.370s] running install_lib
+[2.371s] running install_data
+[2.372s] running install_egg_info
+[2.374s] removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/uv_power/lib/python3.10/site-packages/uv_power-0.0.0-py3.10.egg-info' (and everything under it)
+[2.374s] Copying ../../build/uv_power/uv_power.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/uv_power/lib/python3.10/site-packages/uv_power-0.0.0-py3.10.egg-info
+[2.375s] running install_scripts
+[2.396s] Installing uv_power script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/uv_power/lib/uv_power
+[2.396s] writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/install.log'
+[2.566s] Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/uv_power' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/uv_power/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/uv_power build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/uv_power/install.log --single-version-externally-managed

@@ -23,6 +23,7 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration
+from launch import LaunchDescription
 
 TURTLEBOT3_MODEL = os.environ['TURTLEBOT3_MODEL']
 
@@ -53,4 +54,4 @@ def generate_launch_description():
             PythonLaunchDescriptionSource([launch_file_dir, '/robot_state_publisher.launch.py']),
             launch_arguments={'use_sim_time': use_sim_time}.items(),
         ),
-    ])
+    ]) 
