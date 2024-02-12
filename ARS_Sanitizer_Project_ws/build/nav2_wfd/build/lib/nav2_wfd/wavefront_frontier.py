@@ -38,9 +38,8 @@ import numpy as np
 
 import math
 
-OCC_THRESHOLD = 30
-MIN_FRONTIER_SIZE = 5
-RADIUS = 0.7
+OCC_THRESHOLD = 10
+MIN_FRONTIER_SIZE = 10
 
 class Costmap2d():
     class CostValues(Enum):
@@ -216,15 +215,6 @@ def getFrontier(pose, costmap, logger):
                     mapPointQueue.append(v)
 
         p.classification = p.classification | PointClassification.MapClosed.value
-
-    # Generazione frontiera fittizia per sbloccare il robot 
-    angle = np.random.uniform(0, 2*np.pi)
-    new_frontier_x = pose.position.x + np.cos(angle)*RADIUS
-    new_frontier_y = pose.position.y + np.sin(angle)*RADIUS
-    
-
-    new_frontier_cords = costmap.mapToWorld(new_frontier_x, new_frontier_y)
-    frontiers.append(new_frontier_cords)
 
     return frontiers
         
@@ -510,7 +500,7 @@ def main(argv=sys.argv[1:]):
     #time.sleep(10)
 
     wps = [[-0.52, -0.54], [0.58, -0.55], [0.58, 0.52]]
-    starting_pose = [-2.0, -0.5]
+    starting_pose = [1.0, 3.0]
 
     test = WaypointFollowerTest()
     #test.dumpCostmap()

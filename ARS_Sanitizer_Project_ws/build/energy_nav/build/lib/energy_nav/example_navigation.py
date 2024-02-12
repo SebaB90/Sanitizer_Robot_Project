@@ -16,6 +16,8 @@
 import time
 import math
 import numpy as np
+import tkinter as tk
+from PIL import Image, ImageTk
 #import Duration
 
 
@@ -116,6 +118,8 @@ class BasicNavigator(Node):
 
     def goal_generator (self, room_ids):
         ########## GOAL DEFINITION ##########
+        goal_x = None
+        goal_y = None
 
         # Acquisizione della mappa 
         if self.energy_matrix_received is True:
@@ -133,7 +137,7 @@ class BasicNavigator(Node):
             dirty_ids = [i for i, val in enumerate(energy_matrix) if val < UV_MIN_LEVEL and i in room_ids]
             if dirty_ids == []:  # se non ci sono punti sporchi interrompi l'espolarione
                 print('esplorazione completata')
-                return (0, 0, True)
+                return (0.0, 0.0, True)
             # trovo il più vicino
             smallest_dist = 10000
             for id in (dirty_ids):
@@ -147,7 +151,7 @@ class BasicNavigator(Node):
 
             if goal_x == None or goal_y == None:
                 print('esplorazione completata')
-                return (0, 0, True)
+                return (0.0, 0.0, True)
                     
             return (goal_x, goal_y, False)
     
@@ -245,7 +249,7 @@ class BasicNavigator(Node):
     def _waitForInitialPose(self):
         if self.initial_pose_received:
             self._setInitialPose()
-            self.info('amcl_pose received and published')
+            self.info('amcl_pose received')
             print(f"Initial pose received: {self.amcl_pose.pose.pose.position.x} {self.amcl_pose.pose.pose.position.y}")
         
         rclpy.spin_once(self, timeout_sec=1)
@@ -266,7 +270,7 @@ class BasicNavigator(Node):
 
     def _setInitialPose(self):
         msg = self.amcl_pose
-        self.initial_pose_pub.publish(msg)
+        #self.initial_pose_pub.publish(msg)
         return
 
     def info(self, msg):
@@ -285,6 +289,26 @@ class BasicNavigator(Node):
         self.get_logger().debug(msg)
         return
 
+# Lista delle stanze selezionate
+selected_rooms = []
+
+# Funzione chiamata quando un pulsante di stanza viene cliccato
+def room_button_clicked(room_id):
+    if room_id not in selected_rooms:
+        selected_rooms.append(room_id)
+        print("Room", room_id, "selected.")
+    else:
+        selected_rooms.remove(room_id)
+        print("Room", room_id, "deselected.")
+
+# Funzione chiamata quando il pulsante di inizializzazione viene cliccato
+def start_sanitization(root):
+    root.destroy()  # Chiudi la finestra Tkinter
+    print("Start sanitization with rooms:", selected_rooms)
+    # Continua con il resto del codice...
+
+
+
 
 def main(argv=sys.argv[1:]):
     rclpy.init()
@@ -301,6 +325,7 @@ def main(argv=sys.argv[1:]):
     input('Navigation2 ok, enter to continue')
 
 
+
     # Setting the goal pose with our logic
     sanification_complete = False
     goal_pose = PoseStamped()
@@ -310,20 +335,135 @@ def main(argv=sys.argv[1:]):
     goal_pose.pose.orientation.w = 1.0
 
     # Definizione coordinate stanze
-    room = 0
-    room_ids = []
+    import numpy as np
 
-    if room == 0:
-        # Kitchen
-        x_room_range = list(np.arange(2.6, 7.0, 0.2))
-        y_room_range = list(np.arange(0.2, 4.2, 0.2))
+    room_ids = []
+    x_room_remove_range = []
+    y_room_remove_range = []
+    x_room_range = []
+    y_room_range = []
+
+    ###################################################################################
+    # Definizione delle stanze
+    room_list = {'Kitchen_1': 0, 'Bathroom_1': 1, 'Bathroom_2':2, 'Kitchen_2':3, 'Living_room':4, 'Office':5, 'Bedrooms':6 }  # Mappatura nome stanza - indice
+
+    # Crea una finestra Tkinter
+    root = tk.Tk()
+    root.title("Seleziona le stanze da pulire")
+
+    # Carica l'immagine della mappa
+    image_path = "/home/sebab/ARS_Project_map.png"
+    image = Image.open(image_path)
+    photo = ImageTk.PhotoImage(image)
+
+    # Crea un canvas per visualizzare l'immagine
+    canvas = tk.Canvas(root, width=image.size[0], height=image.size[1])
+    canvas.pack()
+    canvas.create_image(0, 0, anchor=tk.NW, image=photo)
+
+    # Define the font style and size
+    font_style = ("Helvetica", 12)
+
+    # Creare pulsanti per ogni stanza
+    buttons = {}
+    for room, idx in room_list.items():
+        button = tk.Button(root, text=room, command=lambda room_id=idx: room_button_clicked(room_id), bg="blue", fg="white", font=font_style)
+        if room == 'Kitchen_1':
+            button.place(x=500, y=100)  # Posizione del pulsante, da modificare
+        if room == 'Bathroom_1':
+            button.place(x=350, y=100)
+        if room == 'Bathroom_2':
+            button.place(x=550, y=320)
+        if room == 'Kitchen_2':
+            button.place(x=290, y=320)
+        if room == 'Living_room':
+            button.place(x=290, y=460)
+        if room == 'Office':
+            button.place(x=170, y=130)
+        if room == 'Bedrooms':
+            button.place(x=20, y=180)
+        buttons[room] = button
+
+    # Aggiungi un pulsante per inizializzare la sanificazione
+    start_button = tk.Button(root, text="Start Sanitization", command=lambda: start_sanitization(root), bg="green", fg="white", font=font_style)
+    start_button.pack()
+
+    # Esegui la finestra principale
+    root.mainloop()
+
+    ###################################################################################
+
+    res = navigator.energy_matrix.info.resolution
+    # In the following we define the different rooms
+    for room in selected_rooms:
+        # Kitchen 1
+        if room == 0:
+            x_room_range.extend(np.arange(2.6, 7.0, res))
+            y_room_range.extend(np.arange(0.2, 5.0, res))
+            x_room_remove_range.extend(np.arange(4.0, 6.2, res))
+            y_room_remove_range.extend(np.arange(4.6, 5.0, res))
+        # Bathroom 1
+        elif room == 1:
+            x_room_range.extend(np.arange(0.2, 2.0, res))
+            y_room_range.extend(np.arange(1.4, 5.0, res))
+        # Bathroom 2
+        elif room == 2:
+            x_room_range.extend(np.arange(-5.0, -0.4, res))
+            y_room_range.extend(np.arange(5.2, 7.0, res))
+        # Kitchen 2
+        elif room == 3:
+            x_room_range.extend(np.arange(-5.0, 4.4, res))
+            y_room_range.extend(np.arange(-3.6, -0.4, res))
+        # Living room
+        elif room == 4:
+            x_room_range.extend(np.arange(-7.0, 5.0, res))
+            x_room_range.extend(np.arange(5.0, 7.0, res))
+            x_room_remove_range.extend(np.arange(3.0, 4.0, res))
+            x_room_remove_range.extend(np.arange(0.6, 1.8, res))
+            x_room_remove_range.extend(np.arange(-2.6, -1.2, res))
+            x_room_remove_range.extend(np.arange(-6.6, -5.4, res))
+            y_room_range.extend(np.arange(-7.8, -4.4, res))
+            y_room_range.extend(np.arange(-7.4, -5.6, res))
+            y_room_remove_range.extend(np.arange(-4.6, -3.4, res))
+            y_room_remove_range.extend(np.arange(-7.2, -6.6, res))
+            y_room_remove_range.extend(np.arange(-4.6, -3.4, res))
+            y_room_remove_range.extend(np.arange(-4.6, -3.4, res))
+        # Office
+        elif room == 5:
+            x_room_range.extend(np.arange(-2.6, 7.0, res))
+            y_room_range.extend(np.arange(0.2, 4.2, res))
+        # Bedrooms
+        elif room == 6:
+            x_room_range.extend(np.arange(-7.2, -5.2, res))
+            x_room_remove_range.extend(np.arange(-7.2, -6.0, res))
+            x_room_remove_range.extend(np.arange(-7.2, -6.6, res))
+            x_room_remove_range.extend(np.arange(-3.4, 5.0, res))
+            y_room_range.extend(np.arange(-3.4, 5.0, res))
+            y_room_remove_range.extend(np.arange(4.4, 5.0, res))
+            y_room_remove_range.extend(np.arange(1.0, 1.6, res))
+            y_room_remove_range.extend(np.arange(-2.4, -1.2, res))
+
+    # Rimuovere duplicati e ordinare le liste di rimozione
+    x_room_remove_range = sorted(list(set(x_room_remove_range)))
+    y_room_remove_range = sorted(list(set(y_room_remove_range)))
+
+    # Rimuovere duplicati dalle liste di coordinate
+    x_room_range = sorted(list(set(x_room_range)))
+    y_room_range = sorted(list(set(y_room_range)))
+
     # due for innestati per generare tutte le coordinate della stanza
-    for ix in range(len(x_room_range)):
-        x = x_room_range[ix]
-        for iy in range(len(y_room_range)):
-            y = y_room_range[iy]
+    for x in x_room_range:
+        for y in y_room_range:
             id = navigator.map_point_to_id(x, y, navigator.energy_matrix.info.resolution, navigator.energy_matrix.info.origin.position.x, navigator.energy_matrix.info.origin.position.y, navigator.energy_matrix.info.width)
             room_ids.append(id)  
+
+    # due for innestati per rimuovere dai punti da sanificare le librerie ed evitare così problemi nella navigazione
+    for x in x_room_remove_range:
+        for y in y_room_remove_range:
+            id = navigator.map_point_to_id(x, y, navigator.energy_matrix.info.resolution, navigator.energy_matrix.info.origin.position.x, navigator.energy_matrix.info.origin.position.y, navigator.energy_matrix.info.width)
+            if id in room_ids:
+                room_ids.remove(id)
+  
 
     with open('room_ids.txt', 'w') as file:
     # Iteriamo ogni elemento della lista e lo scriviamo nel file
@@ -361,3 +501,5 @@ def main(argv=sys.argv[1:]):
     rclpy.shutdown()    
 
     exit(0)
+
+
