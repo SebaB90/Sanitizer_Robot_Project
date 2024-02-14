@@ -47,6 +47,7 @@ For the implementation we used [this repository](https://github.com/SeanReg/nav2
 In the following image the concept of frontier is show.
 
 ![Frontier](https://hackmd.io/_uploads/Hk6UjK9sp.png)
+<p align="center"><img src=Images/frontier.png/></p>
 
 The code implmented in the repository subscribing to the Occupancy Grid topic to determine known areas of the map. Through nested iterations, it examines each point and its adjacent points to identify frontiers. Once frontiers are established, the algorithm selects a central frontier point and designates a target location for the robot. Utilizing nav2, the robot then plots a course to the specified position. This process is iterative and concludes when no additional frontiers are detected, ensuring thorough mapping of the environment.
 
