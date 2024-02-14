@@ -1,0 +1,6 @@
+[console_scripts]
+energy_navigation = task4_sanification.energy_navigation_node:main
+energy_publisher = task4_sanification.energy_publisher_node:main
+power_publisher = task4_sanification.power_publisher_node:main
+trigger_global_localization = task4_sanification.trigger_global_localization:main
+

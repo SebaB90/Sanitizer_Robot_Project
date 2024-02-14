@@ -1,0 +1,23 @@
+[0.944s] Invoking command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/task4_sanification': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/task4_sanification build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/install.log --single-version-externally-managed
+[1.163s] running egg_info
+[1.163s] writing ../../build/task4_sanification/task4_sanification.egg-info/PKG-INFO
+[1.164s] writing dependency_links to ../../build/task4_sanification/task4_sanification.egg-info/dependency_links.txt
+[1.164s] writing entry points to ../../build/task4_sanification/task4_sanification.egg-info/entry_points.txt
+[1.164s] writing requirements to ../../build/task4_sanification/task4_sanification.egg-info/requires.txt
+[1.164s] writing top-level names to ../../build/task4_sanification/task4_sanification.egg-info/top_level.txt
+[1.165s] reading manifest file '../../build/task4_sanification/task4_sanification.egg-info/SOURCES.txt'
+[1.166s] writing manifest file '../../build/task4_sanification/task4_sanification.egg-info/SOURCES.txt'
+[1.166s] running build
+[1.166s] running build_py
+[1.166s] running install
+[1.166s] running install_lib
+[1.167s] running install_data
+[1.168s] running install_egg_info
+[1.169s] removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages/task4_sanification-0.0.0-py3.10.egg-info' (and everything under it)
+[1.170s] Copying ../../build/task4_sanification/task4_sanification.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages/task4_sanification-0.0.0-py3.10.egg-info
+[1.170s] running install_scripts
+[1.186s] Installing energy_navigation script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification
+[1.186s] Installing energy_publisher script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification
+[1.186s] Installing power_publisher script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification
+[1.186s] writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/install.log'
+[1.251s] Invoked command in '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/task4_sanification' returned '0': PYTHONPATH=/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/task4_sanification build --build-base /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/build install --record /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/install.log --single-version-externally-managed

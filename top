@@ -1,0 +1,65 @@
+[33mcommit 47572f575d2bd5bbd0909237b92f163378a3fb84[m[33m ([m[1;36mHEAD -> [m[1;32mSebab[m[33m, [m[1;31morigin/Sebab[m[33m)[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Tue Feb 13 00:23:17 2024 +0100
+
+    Added a folder with the parameter and configuration files used
+
+[33mcommit 6a4d0b8ac2d4ce9f9e917addfbdcf8517f930dba[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Tue Feb 13 00:12:57 2024 +0100
+
+    Aggiornato il file della forntier exploration
+
+[33mcommit cbad012ef2fb9e85b103be2a833250d728ea0422[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Tue Feb 13 00:02:33 2024 +0100
+
+    Fixed the parameters for the navigation, addend a graphic interface for starting the sanification, dimin
+
+[33mcommit e80933c536c2d4b9bbdb613f2fc63206b7b5d0e2[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Sun Feb 11 21:33:53 2024 +0100
+
+    Corretta la generazione della mappa dell'energia e corretto l'algoritmo per navigare e sanificare l'ambiente
+
+[33mcommit 9eb5aef38b6759d77fcbe0b2f2fd47332752db45[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Sun Feb 11 13:09:34 2024 +0100
+
+    aggiunti i nodi energy_navigation ed energy_publisher, rimane da sistemare l'energy navigation che al momemnto non si rende conto di quando il set point è raggiunto
+
+[33mcommit 15aed810b37fd4f8d14205ce74a7cab6f408aecb[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Sat Feb 10 18:25:05 2024 +0100
+
+    Aggiunta la navigazione per la creazione della mappa tramite frontier exploration e la generation della costmap per vedere le zone sanificate
+
+[33mcommit aa1daf470ac887edf7263b768c72bcb565b0413b[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Sun Feb 4 00:37:07 2024 +0100
+
+    Fixato un problema nel frontier exploration, nel quale veniva scritto il nome del action server era scritto sbagliato all'interno del client che lo chiamava. Il nome corretto è follow_waypoint
+
+[33mcommit 29dfd4d6ee82978d994bda42d6ee8f5e08d4569f[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Thu Jan 25 12:11:18 2024 +0100
+
+    Readme.md updated
+
+[33mcommit 2d4957a611e404fa48d3ea6ba076fddce42dc9b5[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Thu Jan 25 12:04:39 2024 +0100
+
+    Added the instruction for the porject in the Readme.md file
+
+[33mcommit 19e4313721e51aebbe9395a420e8bf3ed69c2ce1[m
+Author: SebaB90 <sebastiano.bertame@studio.unibo.it>
+Date:   Thu Jan 25 11:59:02 2024 +0100
+
+    Creation of the folders for the project, the code will be put into the *_ws folder
+
+[33mcommit ccb523e97a60402ad3cd47ae53a31465c1ced309[m
+Author: Sebastiano Bertamé <153210613+SebaB90@users.noreply.github.com>
+Date:   Thu Jan 25 11:48:12 2024 +0100
+
+    Initial commit

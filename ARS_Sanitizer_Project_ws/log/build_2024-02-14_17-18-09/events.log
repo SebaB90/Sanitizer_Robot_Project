@@ -1,0 +1,65 @@
+[0.000000] (-) TimerEvent: {}
+[0.000314] (nav2_wfd) JobQueued: {'identifier': 'nav2_wfd', 'dependencies': OrderedDict()}
+[0.000340] (task4_sanification) JobQueued: {'identifier': 'task4_sanification', 'dependencies': OrderedDict()}
+[0.000719] (nav2_wfd) JobStarted: {'identifier': 'nav2_wfd'}
+[0.034628] (task4_sanification) JobStarted: {'identifier': 'task4_sanification'}
+[0.100032] (-) TimerEvent: {}
+[0.200348] (-) TimerEvent: {}
+[0.300626] (-) TimerEvent: {}
+[0.400948] (-) TimerEvent: {}
+[0.501312] (-) TimerEvent: {}
+[0.601775] (-) TimerEvent: {}
+[0.702237] (-) TimerEvent: {}
+[0.802583] (-) TimerEvent: {}
+[0.839464] (task4_sanification) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/task4_sanification', 'build', '--build-base', '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/build', 'install', '--record', '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/install.log', '--single-version-externally-managed'], 'cwd': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/task4_sanification', 'env': {'USER': 'sebab', 'LC_TIME': 'it_IT.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'HOME': '/home/sebab', 'OLDPWD': '/home/sebab', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'it_IT.UTF-8', 'SYSTEMD_EXEC_PID': '2482', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'sebab', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sebab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/sebab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sebab-XPS-15-9510:@/tmp/.ICE-unix/2450,unix/sebab-XPS-15-9510:/tmp/.ICE-unix/2450', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2c1fa053_0dd7_48aa_b870_b64e93173395', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ODR7I2', 'GNOME_TERMINAL_SERVICE': ':1.1610', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'QT_IM_MODULE': 'ibus', 'JAVA_HOME': '/lib/jvm/java-11-openjdk-amd64/bin/java', 'PWD': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages:'}, 'shell': False}
+[0.854978] (nav2_wfd) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/nav2_wfd', 'build', '--build-base', '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/build', 'install', '--record', '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log', '--single-version-externally-managed'], 'cwd': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/src/nav2_wavefront_frontier_exploration', 'env': {'USER': 'sebab', 'LC_TIME': 'it_IT.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'HOME': '/home/sebab', 'OLDPWD': '/home/sebab', 'DESKTOP_SESSION': 'ubuntu', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'it_IT.UTF-8', 'SYSTEMD_EXEC_PID': '2482', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'LOGNAME': 'sebab', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sebab', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/sebab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sebab-XPS-15-9510:@/tmp/.ICE-unix/2450,unix/sebab-XPS-15-9510:/tmp/.ICE-unix/2450', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'it_IT.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2c1fa053_0dd7_48aa_b870_b64e93173395', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'it_IT.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.ODR7I2', 'GNOME_TERMINAL_SERVICE': ':1.1610', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SHELL': '/bin/bash', 'LC_NAME': 'it_IT.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LC_MEASUREMENT': 'it_IT.UTF-8', 'LC_IDENTIFICATION': 'it_IT.UTF-8', 'QT_IM_MODULE': 'ibus', 'JAVA_HOME': '/lib/jvm/java-11-openjdk-amd64/bin/java', 'PWD': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'LC_NUMERIC': 'it_IT.UTF-8', 'LC_PAPER': 'it_IT.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'PYTHONPATH': '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/prefix_override:/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages:'}, 'shell': False}
+[0.902702] (-) TimerEvent: {}
+[1.003165] (-) TimerEvent: {}
+[1.045142] (task4_sanification) StdoutLine: {'line': b'running egg_info\n'}
+[1.045756] (task4_sanification) StdoutLine: {'line': b'writing ../../build/task4_sanification/task4_sanification.egg-info/PKG-INFO\n'}
+[1.046086] (task4_sanification) StdoutLine: {'line': b'writing dependency_links to ../../build/task4_sanification/task4_sanification.egg-info/dependency_links.txt\n'}
+[1.046254] (task4_sanification) StdoutLine: {'line': b'writing entry points to ../../build/task4_sanification/task4_sanification.egg-info/entry_points.txt\n'}
+[1.046310] (task4_sanification) StdoutLine: {'line': b'writing requirements to ../../build/task4_sanification/task4_sanification.egg-info/requires.txt\n'}
+[1.046362] (task4_sanification) StdoutLine: {'line': b'writing top-level names to ../../build/task4_sanification/task4_sanification.egg-info/top_level.txt\n'}
+[1.047555] (task4_sanification) StdoutLine: {'line': b"reading manifest file '../../build/task4_sanification/task4_sanification.egg-info/SOURCES.txt'\n"}
+[1.048572] (task4_sanification) StdoutLine: {'line': b"writing manifest file '../../build/task4_sanification/task4_sanification.egg-info/SOURCES.txt'\n"}
+[1.048716] (task4_sanification) StdoutLine: {'line': b'running build\n'}
+[1.048797] (task4_sanification) StdoutLine: {'line': b'running build_py\n'}
+[1.049068] (task4_sanification) StdoutLine: {'line': b'running install\n'}
+[1.049465] (task4_sanification) StdoutLine: {'line': b'running install_lib\n'}
+[1.050532] (task4_sanification) StdoutLine: {'line': b'running install_data\n'}
+[1.050913] (task4_sanification) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.052222] (task4_sanification) StdoutLine: {'line': b"removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages/task4_sanification-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.052426] (task4_sanification) StdoutLine: {'line': b'Copying ../../build/task4_sanification/task4_sanification.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/python3.10/site-packages/task4_sanification-0.0.0-py3.10.egg-info\n'}
+[1.052939] (task4_sanification) StdoutLine: {'line': b'running install_scripts\n'}
+[1.068492] (nav2_wfd) StdoutLine: {'line': b'running egg_info\n'}
+[1.068742] (nav2_wfd) StdoutLine: {'line': b'writing ../../build/nav2_wfd/nav2_wfd.egg-info/PKG-INFO\n'}
+[1.068901] (nav2_wfd) StdoutLine: {'line': b'writing dependency_links to ../../build/nav2_wfd/nav2_wfd.egg-info/dependency_links.txt\n'}
+[1.069014] (nav2_wfd) StdoutLine: {'line': b'writing entry points to ../../build/nav2_wfd/nav2_wfd.egg-info/entry_points.txt\n'}
+[1.069327] (nav2_wfd) StdoutLine: {'line': b'writing requirements to ../../build/nav2_wfd/nav2_wfd.egg-info/requires.txt\n'}
+[1.069439] (nav2_wfd) StdoutLine: {'line': b'writing top-level names to ../../build/nav2_wfd/nav2_wfd.egg-info/top_level.txt\n'}
+[1.070097] (task4_sanification) StdoutLine: {'line': b'Installing energy_navigation script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification\n'}
+[1.070364] (task4_sanification) StdoutLine: {'line': b'Installing energy_publisher script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification\n'}
+[1.070434] (task4_sanification) StdoutLine: {'line': b'Installing power_publisher script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification\n'}
+[1.070493] (task4_sanification) StdoutLine: {'line': b'Installing trigger_global_localization script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/task4_sanification/lib/task4_sanification\n'}
+[1.070727] (task4_sanification) StdoutLine: {'line': b"writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/task4_sanification/install.log'\n"}
+[1.070982] (nav2_wfd) StdoutLine: {'line': b"reading manifest file '../../build/nav2_wfd/nav2_wfd.egg-info/SOURCES.txt'\n"}
+[1.071397] (nav2_wfd) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[1.072199] (nav2_wfd) StdoutLine: {'line': b"writing manifest file '../../build/nav2_wfd/nav2_wfd.egg-info/SOURCES.txt'\n"}
+[1.072389] (nav2_wfd) StdoutLine: {'line': b'running build\n'}
+[1.072481] (nav2_wfd) StdoutLine: {'line': b'running build_py\n'}
+[1.072576] (nav2_wfd) StdoutLine: {'line': b'running install\n'}
+[1.072988] (nav2_wfd) StdoutLine: {'line': b'running install_lib\n'}
+[1.074399] (nav2_wfd) StdoutLine: {'line': b'running install_data\n'}
+[1.074789] (nav2_wfd) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.076211] (nav2_wfd) StdoutLine: {'line': b"removing '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages/nav2_wfd-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.076458] (nav2_wfd) StdoutLine: {'line': b'Copying ../../build/nav2_wfd/nav2_wfd.egg-info to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/python3.10/site-packages/nav2_wfd-0.0.0-py3.10.egg-info\n'}
+[1.076940] (nav2_wfd) StdoutLine: {'line': b'running install_scripts\n'}
+[1.091802] (task4_sanification) CommandEnded: {'returncode': 0}
+[1.095542] (nav2_wfd) StdoutLine: {'line': b'Installing explore script to /home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/install/nav2_wfd/lib/nav2_wfd\n'}
+[1.096214] (nav2_wfd) StdoutLine: {'line': b"writing list of installed files to '/home/sebab/ARS_Sanitizer_Project/ARS_Sanitizer_Project_ws/build/nav2_wfd/install.log'\n"}
+[1.103857] (-) TimerEvent: {}
+[1.131696] (task4_sanification) JobEnded: {'identifier': 'task4_sanification', 'rc': 0}
+[1.132972] (nav2_wfd) CommandEnded: {'returncode': 0}
+[1.166363] (nav2_wfd) JobEnded: {'identifier': 'nav2_wfd', 'rc': 0}
+[1.167172] (-) EventReactorShutdown: {}

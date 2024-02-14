@@ -1,3 +1,0 @@
-[console_scripts]
-energy_pub_node = energy_pub.energy_pub:main
-
