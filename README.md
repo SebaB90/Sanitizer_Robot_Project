@@ -55,14 +55,7 @@ The command to launch the exploraiton is the following:
 ```Bash
 ros2 run nav2_wfd explore
 ```
-
-
-
-
-
-
-
-VIDEO MAPPING
+<p align="center"><img src=Images/mapping.gif alt="animated" /></p>
 
 
 ## Task 3 - Localization in the world 
