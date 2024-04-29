@@ -1,20 +1,10 @@
 
 # AMR - Sanitizer Robot
 
-## Final Project 
-
-**Students involved in the project:**
+**Group that realize the project:**
 - Bertamè Sebastiano - sebastiano.bertame@studio.unibo.it
 - Elio Alberto - alberto.elio@studio.unibo.it
 - Villari Francesco - francesco.villari@studio.unibo.it
-
-
-**Instructor:**
-- Gianluca Palli - gianluca.palli@unibo.it
-- Department: DEI - LAR
-- University: University of Bologna
-- Address: Viale del Risorgimento 2, 40136 Bologna
-
 
 
 ##  Task1 - Simulation setup
