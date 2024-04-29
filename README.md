@@ -1,7 +1,7 @@
 
 # AMR - Sanitizer Robot
 
-**Group that realize the project:**
+**Group that realized the project:**
 - Bertamè Sebastiano - sebastiano.bertame@studio.unibo.it
 - Elio Alberto - alberto.elio@studio.unibo.it
 - Villari Francesco - francesco.villari@studio.unibo.it
