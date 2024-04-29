@@ -1,5 +1,5 @@
 
-# AMR - Sanitizer Robot
+# Sanitizer Robot Project
 
 **Group that realized the project:**
 - Bertamè Sebastiano - sebastiano.bertame@studio.unibo.it
